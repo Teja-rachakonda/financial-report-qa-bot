@@ -1,3 +1,8 @@
+import os
+os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
+os.environ["TRANSFORMERS_OFFLINE"] = "0"
+
+
 import streamlit as st
 from langchain_utils import query_with_rag
 
